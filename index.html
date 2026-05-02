@@ -298,8 +298,9 @@
       background: linear-gradient(
         to right,
         rgba(255,255,255,0.97) 0%,
-        rgba(255,255,255,0.85) 45%,
-        rgba(255,255,255,0.3) 100%
+        rgba(255,255,255,0.88) 42%,
+        rgba(255,255,255,0.45) 70%,
+        rgba(255,255,255,0.15) 100%
       );
     }
     @media (max-width: 767px) {
@@ -408,9 +409,9 @@
     }
     @media (min-width: 768px) {
       .about-grid {
-        grid-template-columns: 2fr 3fr;
+        grid-template-columns: 5fr 7fr;
         gap: 4rem;
-        align-items: center;
+        align-items: start;
       }
     }
     .about-photo-wrap {
@@ -420,12 +421,12 @@
       width: 100%;
       aspect-ratio: 3/4;
       object-fit: cover;
-      object-position: center top;
+      object-position: center 20%;
       border-radius: var(--radius-card);
-      box-shadow: var(--shadow-card);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10), 0 1px 4px rgba(0,0,0,0.06);
     }
     @media (max-width: 767px) {
-      .about-photo { max-height: 420px; object-fit: cover; }
+      .about-photo { max-height: 400px; }
     }
     .about-text h2 {
       font-family: 'Playfair Display', serif;
@@ -599,11 +600,30 @@
     }
     @media (min-width: 1024px) { .testimonials-section { padding: 6rem 0; } }
 
+    .testimonials-header {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    .testimonials-header-text { flex: 1; }
+    .testimonials-portrait {
+      flex-shrink: 0;
+      width: 120px;
+      height: 160px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-card);
+      display: none;
+    }
+    @media (min-width: 640px) {
+      .testimonials-portrait { display: block; }
+    }
     .testimonials-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 1.5rem;
-      margin-top: 3rem;
     }
     @media (min-width: 768px) {
       .testimonials-grid { grid-template-columns: 1fr 1fr; }
@@ -979,11 +999,11 @@
       <!-- Photo -->
       <div class="about-photo-wrap">
         <img
-          src="/images/IMG_3200.jpg"
+          src="/images/IMG_3054.jpg"
           alt="Spencer Perilloux performing on marimba outdoors in natural light"
           class="about-photo"
-          width="600"
-          height="800"
+          width="1200"
+          height="900"
           loading="lazy"
         >
       </div>
@@ -1089,8 +1109,19 @@
 ══════════════════════════════════════ -->
 <section class="testimonials-section" id="testimonials" aria-labelledby="testimonials-heading">
   <div class="container">
-    <div class="section-heading">
-      <h2 id="testimonials-heading">What Educators Are Saying</h2>
+    <div class="testimonials-header">
+      <div class="testimonials-header-text">
+        <span class="eyebrow">Testimonials</span>
+        <h2 id="testimonials-heading" style="font-family:'Playfair Display',serif;font-size:clamp(1.75rem,3vw,2.25rem);font-weight:700;color:var(--fg);">What Educators Are Saying</h2>
+      </div>
+      <img
+        src="/images/Spencer_Perilloux_Final-03.jpg"
+        alt="Spencer Perilloux with snare drum"
+        class="testimonials-portrait"
+        width="880"
+        height="1320"
+        loading="lazy"
+      >
     </div>
 
     <div class="testimonials-grid" role="list">
