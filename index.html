@@ -1184,12 +1184,12 @@
 
       <!-- Right: form -->
       <div>
-        <!-- SETUP: Replace FORMSPREE_ENDPOINT with your actual Formspree form ID.
-             Create a free account at https://formspree.io, create a new form,
-             and paste the form ID (e.g., xpwzabcd) in place of FORMSPREE_ENDPOINT. -->
+        <!-- SETUP: Replace N8N_WEBHOOK_URL below with your actual n8n webhook URL.
+             Import n8n-contact-form-workflow.json into n8n, activate it,
+             then copy the production webhook URL here. -->
         <form
           id="contact-form"
-          action="https://formspree.io/f/FORMSPREE_ENDPOINT"
+          action="N8N_WEBHOOK_URL"
           method="POST"
           novalidate
           aria-label="Contact form"
@@ -1384,11 +1384,18 @@
     formError.style.display = 'none';
 
     try {
-      const data = new FormData(form);
+      const formData = new FormData(form);
+      const payload = {
+        firstName: formData.get('first_name'),
+        lastName: formData.get('last_name'),
+        email: formData.get('email'),
+        inquiryType: formData.get('inquiry_type'),
+        message: formData.get('message'),
+      };
       const res = await fetch(form.action, {
         method: 'POST',
-        body: data,
-        headers: { 'Accept': 'application/json' }
+        body: JSON.stringify(payload),
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
       });
 
       if (res.ok) {

@@ -1,0 +1,85 @@
+{
+  "name": "MyPercussionPath — Contact Form Notification",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "contact-form",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook-node",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [240, 300],
+      "webhookId": "contact-form"
+    },
+    {
+      "parameters": {
+        "sendTo": "spencer.perilloux@gmail.com",
+        "subject": "=New Contact Form Submission — {{ $json.body.inquiryType }}",
+        "emailType": "html",
+        "message": "=<div style=\"font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #ffffff; border: 1px solid #e5e5ea; border-radius: 8px; overflow: hidden;\">\n  <div style=\"background: #2d6a4f; padding: 24px 32px;\">\n    <h1 style=\"color: #ffffff; margin: 0; font-size: 20px; font-weight: 700;\">New Contact Form Submission</h1>\n    <p style=\"color: rgba(255,255,255,0.8); margin: 4px 0 0; font-size: 14px;\">mypercussionpath.com</p>\n  </div>\n  <div style=\"padding: 32px;\">\n    <table style=\"width: 100%; border-collapse: collapse;\">\n      <tr>\n        <td style=\"padding: 10px 0; border-bottom: 1px solid #e5e5ea; font-weight: 600; color: #6b7280; font-size: 13px; width: 140px;\">NAME</td>\n        <td style=\"padding: 10px 0; border-bottom: 1px solid #e5e5ea; color: #2c2416; font-size: 15px;\">{{ $json.body.firstName }} {{ $json.body.lastName }}</td>\n      </tr>\n      <tr>\n        <td style=\"padding: 10px 0; border-bottom: 1px solid #e5e5ea; font-weight: 600; color: #6b7280; font-size: 13px;\">EMAIL</td>\n        <td style=\"padding: 10px 0; border-bottom: 1px solid #e5e5ea; font-size: 15px;\"><a href=\"mailto:{{ $json.body.email }}\" style=\"color: #2d6a4f;\">{{ $json.body.email }}</a></td>\n      </tr>\n      <tr>\n        <td style=\"padding: 10px 0; border-bottom: 1px solid #e5e5ea; font-weight: 600; color: #6b7280; font-size: 13px;\">INQUIRY TYPE</td>\n        <td style=\"padding: 10px 0; border-bottom: 1px solid #e5e5ea; color: #2c2416; font-size: 15px;\">{{ $json.body.inquiryType }}</td>\n      </tr>\n      <tr>\n        <td style=\"padding: 10px 0; font-weight: 600; color: #6b7280; font-size: 13px; vertical-align: top;\">MESSAGE</td>\n        <td style=\"padding: 10px 0; color: #2c2416; font-size: 15px; line-height: 1.6; white-space: pre-wrap;\">{{ $json.body.message }}</td>\n      </tr>\n    </table>\n    <div style=\"margin-top: 24px; padding: 16px; background: #f5f5f7; border-radius: 6px;\">\n      <p style=\"margin: 0; font-size: 13px; color: #6b7280;\">Reply directly to this email to respond to {{ $json.body.firstName }}.</p>\n    </div>\n  </div>\n</div>",
+        "options": {
+          "replyTo": "={{ $json.body.email }}"
+        }
+      },
+      "id": "gmail-node",
+      "name": "Send Email via Gmail",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [480, 300],
+      "credentials": {
+        "gmailOAuth2": {
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={ \"ok\": true }",
+        "options": {}
+      },
+      "id": "respond-node",
+      "name": "Respond to Webhook",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [720, 300]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Send Email via Gmail",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send Email via Gmail": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2026-05-02T00:00:00.000Z",
+  "versionId": "1"
+}
