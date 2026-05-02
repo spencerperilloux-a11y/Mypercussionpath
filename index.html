@@ -1184,12 +1184,10 @@
 
       <!-- Right: form -->
       <div>
-        <!-- SETUP: Replace N8N_WEBHOOK_URL below with your actual n8n webhook URL.
-             Import n8n-contact-form-workflow.json into n8n, activate it,
-             then copy the production webhook URL here. -->
+        <!-- Contact form posts JSON to n8n webhook → Gmail notification to spencer.perilloux@gmail.com -->
         <form
           id="contact-form"
-          action="N8N_WEBHOOK_URL"
+          action="https://vervelocitysolutions.app.n8n.cloud/webhook/mpp-contact-form"
           method="POST"
           novalidate
           aria-label="Contact form"
