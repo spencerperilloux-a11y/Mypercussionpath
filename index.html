@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Spencer Perilloux — Orchestral Percussionist &amp; Percussion Educator | Michigan</title>
+  <meta name="description" content="Spencer Perilloux is an orchestral percussionist performing with Michigan symphonies and a percussion educator specializing in keyboard percussion fluency. Private lessons, online courses, and free resources.">
+  <meta name="keywords" content="percussion educator, orchestral percussionist, keyboard percussion lessons, marimba lessons online, percussion courses, Michigan percussionist, mallet percussion, Spencer Perilloux">
+  <meta property="og:title" content="Spencer Perilloux — Orchestral Percussionist &amp; Educator">
+  <meta property="og:description" content="Active orchestral percussionist with Michigan symphonies. Online percussion lessons and courses built around diagnostic-first teaching.">
+  <meta property="og:image" content="/images/Spencer_Perilloux_Final-02.jpg">
+  <meta property="og:url" content="https://mypercussionpath.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://mypercussionpath.com">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Spencer Perilloux",
+    "jobTitle": "Orchestral Percussionist and Percussion Educator",
+    "url": "https://mypercussionpath.com",
+    "email": "spencer.perilloux@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Garden City",
+      "addressRegion": "MI",
+      "addressCountry": "US"
+    },
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "University of Michigan"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "Central Michigan University"
+      }
+    ],
+    "sameAs": [
+      "https://shop.mypercussionpath.com"
+    ]
+  }
+  </script>
+
+  <style>
+    /* ── Reset & Base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green:        #2d6a4f;
+      --green-hover:  #245840;
+      --green-light:  #e8f4ee;
+      --green-mid:    #3d8a65;
+      --bg:           #ffffff;
+      --fg:           #2c2416;
+      --muted-bg:     #f5f5f7;
+      --muted-fg:     #6b7280;
+      --border:       #e5e5ea;
+      --shadow-card:  0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+      --radius-card:  0.65rem;
+      --radius-btn:   0.5rem;
+      --max-w:        1280px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--fg);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { display: block; max-width: 100%; height: auto; }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Layout helpers ── */
+    .container {
+      max-width: var(--max-w);
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    @media (min-width: 640px) {
+      .container { padding-left: 1.5rem; padding-right: 1.5rem; }
+    }
+    @media (min-width: 1024px) {
+      .container { padding-left: 2rem; padding-right: 2rem; }
+    }
+
+    /* ── Buttons ── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4em;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius-btn);
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.18s, color 0.18s, border-color 0.18s, box-shadow 0.18s;
+      text-decoration: none;
+      white-space: nowrap;
+      border: 2px solid transparent;
+    }
+    .btn-primary {
+      background: var(--green);
+      color: #fff;
+      border-color: var(--green);
+    }
+    .btn-primary:hover { background: var(--green-hover); border-color: var(--green-hover); }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--green);
+      border-color: var(--green);
+    }
+    .btn-outline:hover { background: var(--green); color: #fff; }
+
+    .btn-white {
+      background: #fff;
+      color: var(--green);
+      border-color: #fff;
+    }
+    .btn-white:hover { background: var(--green-light); border-color: var(--green-light); }
+
+    /* ── Eyebrow label ── */
+    .eyebrow {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 0.75rem;
+    }
+
+    /* ────────────────────────────
+       SECTION 1 — NAVIGATION
+    ──────────────────────────── */
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid var(--border);
+      transition: backdrop-filter 0.2s, box-shadow 0.2s;
+    }
+    .site-nav.scrolled {
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      flex-shrink: 0;
+    }
+    .nav-name {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--fg);
+      white-space: nowrap;
+    }
+    .nav-divider {
+      width: 1px;
+      height: 18px;
+      background: var(--border);
+      margin: 0 12px;
+    }
+    .nav-subtitle {
+      font-size: 13px;
+      color: var(--muted-fg);
+      font-weight: 500;
+      white-space: nowrap;
+    }
+    .nav-links {
+      display: none;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+    @media (min-width: 768px) {
+      .nav-links { display: flex; }
+    }
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--fg);
+      transition: color 0.15s;
+    }
+    .nav-links a:hover { color: var(--green); }
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .nav-cta {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      .nav-cta { display: inline-flex; }
+    }
+    .nav-cta .btn { padding: 0.5rem 1.1rem; font-size: 14px; }
+
+    /* Hamburger */
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 6px;
+      background: none;
+      border: none;
+    }
+    @media (min-width: 768px) {
+      .hamburger { display: none; }
+    }
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--fg);
+      border-radius: 2px;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* Mobile menu */
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      background: #fff;
+      border-top: 1px solid var(--border);
+      padding: 1.25rem 1rem 1.5rem;
+      gap: 1rem;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--fg);
+      padding: 0.4rem 0;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.15s;
+    }
+    .mobile-menu a:last-of-type { border-bottom: none; }
+    .mobile-menu a:hover { color: var(--green); }
+    .mobile-menu .btn { width: 100%; justify-content: center; margin-top: 0.5rem; }
+
+    /* ────────────────────────────
+       SECTION 2 — HERO
+    ──────────────────────────── */
+    .hero {
+      position: relative;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+    @media (max-width: 767px) { .hero { min-height: 500px; } }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('/images/Spencer_Perilloux_Final-02.jpg');
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to right,
+        rgba(255,255,255,0.97) 0%,
+        rgba(255,255,255,0.85) 45%,
+        rgba(255,255,255,0.3) 100%
+      );
+    }
+    @media (max-width: 767px) {
+      .hero-overlay {
+        background: linear-gradient(
+          to bottom,
+          rgba(255,255,255,0.95) 0%,
+          rgba(255,255,255,0.88) 60%,
+          rgba(255,255,255,0.6) 100%
+        );
+      }
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding: 5rem 0;
+      max-width: 600px;
+    }
+    .hero-eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 1.25rem;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.25rem, 5vw, 3.5rem);
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--fg);
+      margin-bottom: 1.25rem;
+    }
+    .hero-sub {
+      font-size: 17px;
+      color: var(--muted-fg);
+      line-height: 1.65;
+      max-width: 520px;
+      margin-bottom: 2rem;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    /* ────────────────────────────
+       SECTION 3 — AUTHORITY BAR
+    ──────────────────────────── */
+    .authority-bar {
+      background: var(--muted-bg);
+      padding: 2rem 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .authority-label {
+      text-align: center;
+      font-size: 11px;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--muted-fg);
+      font-weight: 500;
+      margin-bottom: 0.875rem;
+    }
+    .authority-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0;
+      list-style: none;
+    }
+    .authority-list li {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--fg);
+      padding: 0.25rem 1rem;
+      white-space: nowrap;
+    }
+    .authority-list li + li {
+      border-left: 1px solid var(--border);
+    }
+    @media (max-width: 767px) {
+      .authority-list li {
+        padding: 0.2rem 0.6rem;
+        font-size: 12px;
+      }
+    }
+
+    /* ────────────────────────────
+       SECTION 4 — ABOUT
+    ──────────────────────────── */
+    .about-section {
+      padding: 5rem 0 4rem;
+      background: var(--bg);
+    }
+    @media (min-width: 1024px) {
+      .about-section { padding: 6rem 0 5rem; }
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+    @media (min-width: 768px) {
+      .about-grid {
+        grid-template-columns: 2fr 3fr;
+        gap: 4rem;
+        align-items: center;
+      }
+    }
+    .about-photo-wrap {
+      position: relative;
+    }
+    .about-photo {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-card);
+    }
+    @media (max-width: 767px) {
+      .about-photo { max-height: 420px; object-fit: cover; }
+    }
+    .about-text h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.75rem, 3vw, 2.25rem);
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--fg);
+      margin-bottom: 1.5rem;
+    }
+    .about-text p {
+      color: var(--fg);
+      margin-bottom: 1.1rem;
+      font-size: 15.5px;
+    }
+    .about-text p:last-of-type { margin-bottom: 0; }
+    .about-cta-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35em;
+      color: var(--green);
+      font-weight: 600;
+      font-size: 15px;
+      margin-top: 1.5rem;
+      text-decoration: none;
+      border-bottom: 1.5px solid transparent;
+      transition: border-color 0.15s;
+    }
+    .about-cta-link:hover { border-color: var(--green); }
+
+    .credential-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.35rem 0.9rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--fg);
+      background: var(--muted-bg);
+    }
+
+    /* ────────────────────────────
+       SECTION 5 — WHAT I DO
+    ──────────────────────────── */
+    .what-section {
+      padding: 5rem 0;
+      background: var(--bg);
+    }
+    @media (min-width: 1024px) { .what-section { padding: 6rem 0; } }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .section-heading h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.75rem, 3vw, 2.25rem);
+      font-weight: 700;
+      color: var(--fg);
+      margin-bottom: 0.5rem;
+    }
+    .section-heading p {
+      font-size: 15px;
+      color: var(--muted-fg);
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    @media (min-width: 640px) {
+      .cards-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (min-width: 1024px) {
+      .cards-grid { grid-template-columns: 1fr 1fr 1fr; }
+    }
+
+    .card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-card);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .card-icon {
+      width: 44px;
+      height: 44px;
+      color: var(--green);
+      margin-bottom: 1.25rem;
+      flex-shrink: 0;
+    }
+    .card h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--fg);
+      margin-bottom: 0.75rem;
+    }
+    .card p {
+      font-size: 14.5px;
+      color: var(--muted-fg);
+      line-height: 1.65;
+      flex: 1;
+    }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3em;
+      color: var(--green);
+      font-weight: 600;
+      font-size: 14px;
+      margin-top: 1.25rem;
+      text-decoration: none;
+      border-bottom: 1.5px solid transparent;
+      transition: border-color 0.15s;
+    }
+    .card-link:hover { border-color: var(--green); }
+
+    /* ────────────────────────────
+       SECTION 6 — SHOP CTA BAND
+    ──────────────────────────── */
+    .shop-band {
+      background: #2d6a4f;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+    .shop-band .eyebrow {
+      color: rgba(255,255,255,0.8);
+    }
+    .shop-band h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.75rem, 4vw, 3rem);
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 1rem;
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .shop-band p {
+      font-size: 17px;
+      color: rgba(255,255,255,0.85);
+      max-width: 580px;
+      margin: 0 auto 2rem;
+      line-height: 1.65;
+    }
+    .shop-band-note {
+      font-size: 13px;
+      color: rgba(255,255,255,0.7);
+      margin-top: 1rem;
+      line-height: 1.6;
+    }
+
+    /* ────────────────────────────
+       SECTION 7 — TESTIMONIALS
+    ──────────────────────────── */
+    .testimonials-section {
+      padding: 5rem 0;
+      background: var(--muted-bg);
+    }
+    @media (min-width: 1024px) { .testimonials-section { padding: 6rem 0; } }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    @media (min-width: 768px) {
+      .testimonials-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    .testimonial-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--green);
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-card);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .testimonial-mark {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      line-height: 0.8;
+      color: var(--green);
+      margin-bottom: 0.75rem;
+      opacity: 0.7;
+    }
+    .testimonial-text {
+      font-size: 15px;
+      color: var(--fg);
+      line-height: 1.7;
+      flex: 1;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+    }
+    .testimonial-author strong {
+      display: block;
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--fg);
+    }
+    .testimonial-author span {
+      font-size: 13px;
+      color: var(--muted-fg);
+    }
+
+    /* ────────────────────────────
+       SECTION 8 — CONTACT FORM
+    ──────────────────────────── */
+    .contact-section {
+      padding: 5rem 0;
+      background: var(--bg);
+    }
+    @media (min-width: 1024px) { .contact-section { padding: 6rem 0; } }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    @media (min-width: 768px) {
+      .contact-grid {
+        grid-template-columns: 1fr 1.4fr;
+        gap: 4rem;
+        align-items: start;
+      }
+    }
+
+    .contact-info h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.75rem, 3vw, 2.25rem);
+      font-weight: 700;
+      color: var(--fg);
+      margin-bottom: 1rem;
+    }
+    .contact-info p {
+      font-size: 15.5px;
+      color: var(--muted-fg);
+      line-height: 1.7;
+      margin-bottom: 1.75rem;
+    }
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 14.5px;
+      color: var(--fg);
+    }
+    .contact-row-icon {
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    /* Form styles */
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 480px) {
+      .form-row { grid-template-columns: 1fr; }
+    }
+    .form-field {
+      margin-bottom: 1rem;
+    }
+    .form-field label {
+      display: block;
+      font-weight: 500;
+      font-size: 14px;
+      color: var(--fg);
+      margin-bottom: 5px;
+    }
+    .form-field input,
+    .form-field select,
+    .form-field textarea {
+      width: 100%;
+      padding: 10px 14px;
+      font-size: 16px;
+      font-family: 'Inter', sans-serif;
+      color: var(--fg);
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-btn);
+      transition: border-color 0.15s, box-shadow 0.15s;
+      outline: none;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    .form-field select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b7280' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      padding-right: 40px;
+      cursor: pointer;
+    }
+    .form-field input:focus,
+    .form-field select:focus,
+    .form-field textarea:focus {
+      border-color: var(--green);
+      box-shadow: 0 0 0 3px rgba(45,106,79,0.15);
+    }
+    .form-field input.invalid,
+    .form-field select.invalid,
+    .form-field textarea.invalid {
+      border-color: #dc2626;
+    }
+    .form-field textarea { resize: vertical; min-height: 120px; }
+
+    .btn-submit {
+      width: 100%;
+      justify-content: center;
+      padding: 0.875rem 1.5rem;
+      font-size: 16px;
+    }
+    .btn-submit:disabled {
+      opacity: 0.65;
+      cursor: not-allowed;
+    }
+
+    .form-success {
+      display: none;
+      background: var(--green-light);
+      border: 1px solid var(--green);
+      border-radius: var(--radius-card);
+      padding: 2rem;
+      text-align: center;
+    }
+    .form-success .success-icon {
+      font-size: 2.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .form-success strong {
+      display: block;
+      font-size: 1.1rem;
+      color: var(--green);
+      margin-bottom: 0.5rem;
+    }
+    .form-success p { font-size: 14.5px; color: var(--fg); margin: 0; }
+
+    .form-error {
+      display: none;
+      background: #fef2f2;
+      border: 1px solid #fca5a5;
+      border-radius: var(--radius-btn);
+      padding: 0.75rem 1rem;
+      font-size: 14px;
+      color: #dc2626;
+      margin-top: 0.75rem;
+    }
+
+    /* ────────────────────────────
+       SECTION 9 — FOOTER
+    ──────────────────────────── */
+    .site-footer {
+      background: #2c2416;
+      padding: 3rem 2rem 2rem;
+      color: rgba(255,255,255,0.9);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+    @media (min-width: 640px) {
+      .footer-grid { grid-template-columns: 1.6fr 1fr 1fr; }
+    }
+    .footer-brand-name {
+      font-weight: 700;
+      font-size: 17px;
+      color: #fff;
+      margin-bottom: 0.3rem;
+    }
+    .footer-brand-sub {
+      font-size: 13.5px;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 0.6rem;
+    }
+    .footer-tagline {
+      font-size: 13px;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.6;
+      max-width: 220px;
+    }
+    .footer-col-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      margin-bottom: 0.85rem;
+    }
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .footer-links a {
+      font-size: 13.5px;
+      color: rgba(255,255,255,0.75);
+      transition: color 0.15s;
+    }
+    .footer-links a:hover { color: var(--green-mid); }
+
+    .footer-bottom {
+      max-width: var(--max-w);
+      margin: 2rem auto 0;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .footer-bottom span {
+      font-size: 13px;
+      color: rgba(255,255,255,0.4);
+    }
+    .footer-bottom a {
+      font-size: 13px;
+      color: rgba(255,255,255,0.4);
+      transition: color 0.15s;
+    }
+    .footer-bottom a:hover { color: rgba(255,255,255,0.7); }
+
+    /* ── Utility: visually-hidden ── */
+    .sr-only {
+      position: absolute;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0);
+      white-space: nowrap; border: 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     SECTION 1 — NAVIGATION
+══════════════════════════════════════ -->
+<nav class="site-nav" id="nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <!-- Brand -->
+      <a href="#" class="nav-brand" aria-label="Spencer Perilloux — Home">
+        <span class="nav-name">Spencer Perilloux</span>
+        <span class="nav-divider" aria-hidden="true"></span>
+        <span class="nav-subtitle">Percussionist &amp; Educator</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Teaching</a></li>
+        <li><a href="https://shop.mypercussionpath.com">Shop</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Desktop CTA + hamburger -->
+      <div class="nav-right">
+        <div class="nav-cta">
+          <a href="#contact" class="btn btn-primary">Book a Lesson</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" role="menu">
+    <a href="#about" role="menuitem">About</a>
+    <a href="#contact" role="menuitem">Teaching</a>
+    <a href="https://shop.mypercussionpath.com" role="menuitem">Shop</a>
+    <a href="#contact" role="menuitem">Contact</a>
+    <a href="#contact" class="btn btn-primary">Book a Lesson</a>
+  </div>
+</nav>
+
+
+<!-- ══════════════════════════════════════
+     SECTION 2 — HERO
+══════════════════════════════════════ -->
+<section class="hero" id="home" aria-label="Introduction">
+  <div class="hero-bg" role="img" aria-label="Spencer Perilloux, professional orchestral percussionist"></div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Orchestral Percussionist &middot; Educator &middot; Michigan</p>
+      <h1>Precision, Musicality,<br>and the Systems to<br>Build Both.</h1>
+      <p class="hero-sub">Spencer Perilloux is an active orchestral percussionist performing with ensembles across Michigan, and an educator whose teaching centers on diagnostic-first problem solving — giving students the tools to become their own teacher.</p>
+      <div class="hero-actions">
+        <a href="https://shop.mypercussionpath.com" class="btn btn-primary">Explore the Shop &rarr;</a>
+        <a href="#contact" class="btn btn-outline">Book a Lesson</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     SECTION 3 — AUTHORITY BAR
+══════════════════════════════════════ -->
+<section class="authority-bar" aria-label="Orchestra affiliations">
+  <div class="container">
+    <p class="authority-label">Active performer with Michigan orchestras</p>
+    <ul class="authority-list" role="list">
+      <li>Saginaw Bay Symphony Orchestra</li>
+      <li>Oakland Symphony Orchestra</li>
+      <li>Flint Symphony Orchestra</li>
+      <li>Michigan Sinfonietta Orchestra</li>
+      <li>Rochester Symphony Orchestra</li>
+      <li>West Michigan Symphony</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     SECTION 4 — ABOUT / BIO
+══════════════════════════════════════ -->
+<section class="about-section" id="about" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about-grid">
+      <!-- Photo -->
+      <div class="about-photo-wrap">
+        <img
+          src="/images/IMG_3200.jpg"
+          alt="Spencer Perilloux performing on marimba outdoors in natural light"
+          class="about-photo"
+          width="600"
+          height="800"
+          loading="lazy"
+        >
+      </div>
+
+      <!-- Text -->
+      <div class="about-text">
+        <span class="eyebrow">About Spencer</span>
+        <h2 id="about-heading">Orchestral Percussionist.<br>Educator. Michigan.</h2>
+
+        <p>Spencer Perilloux holds a Master of Music in Percussion Performance from the University of Michigan, where he studied with Dr. Douglas Perkins, Dr. Ian Antonio, and Jeremy Epp (Detroit Symphony Orchestra). He earned his Bachelor of Music in Percussion Performance from Central Michigan University, studying with Tom Sherwood (Cleveland Orchestra).</p>
+
+        <p>He performs regularly as a section and substitute percussionist with orchestras throughout Michigan, including the Saginaw Bay Symphony Orchestra, Oakland Symphony Orchestra, Flint Symphony Orchestra, Michigan Sinfonietta Orchestra (Timpanist), Rochester Symphony Orchestra, West Michigan Symphony, Macomb Symphony Orchestra, Warren Symphony Orchestra, and Windsor Symphony Orchestra. He has also performed with the Detroit Community Chorus and participated in the Roundtop Festival Institute in Texas.</p>
+
+        <p>His teaching centers on a diagnostic-first philosophy: rather than prescribing exercises, he teaches students to identify the root cause of technical problems so they can solve them independently. This approach is the foundation of his online course, Unlock The Keyboard, and his broader educational work.</p>
+
+        <a href="https://shop.mypercussionpath.com" class="about-cta-link">
+          &rarr; Explore teaching resources at shop.mypercussionpath.com
+        </a>
+
+        <!-- Credential badges -->
+        <div class="credential-badges" role="list" aria-label="Academic credentials">
+          <span class="badge" role="listitem">M.M. &mdash; University of Michigan</span>
+          <span class="badge" role="listitem">B.M. &mdash; Central Michigan University</span>
+          <span class="badge" role="listitem">Roundtop Festival Institute</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     SECTION 5 — WHAT I DO
+══════════════════════════════════════ -->
+<section class="what-section" id="teaching" aria-labelledby="what-heading">
+  <div class="container">
+    <div class="section-heading">
+      <h2 id="what-heading">What I Do</h2>
+      <p>Performance. Education. Resources.</p>
+    </div>
+
+    <div class="cards-grid" role="list">
+
+      <!-- Card 1: Perform -->
+      <article class="card" role="listitem">
+        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M9 19V6l12-3v13"/>
+          <circle cx="6" cy="19" r="3"/>
+          <circle cx="18" cy="16" r="3"/>
+        </svg>
+        <h3>Orchestral Performance</h3>
+        <p>Active section and substitute percussionist with nine Michigan orchestras. Specializing in keyboard percussion, snare drum, and timpani across a full range of orchestral repertoire.</p>
+      </article>
+
+      <!-- Card 2: Teach -->
+      <article class="card" role="listitem">
+        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"/>
+          <circle cx="12" cy="12" r="3"/>
+          <line x1="12" y1="2" x2="12" y2="9"/>
+          <line x1="12" y1="15" x2="12" y2="22"/>
+          <line x1="2" y1="12" x2="9" y2="12"/>
+          <line x1="15" y1="12" x2="22" y2="12"/>
+        </svg>
+        <h3>Private Instruction</h3>
+        <p>Online lessons for percussionists at all levels. Focused on keyboard percussion fluency, audition preparation, and building the diagnostic skills to practice independently.</p>
+        <a href="#contact" class="card-link">Book a lesson &rarr;</a>
+      </article>
+
+      <!-- Card 3: Create -->
+      <article class="card" role="listitem">
+        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+          <line x1="9" y1="7" x2="15" y2="7"/>
+          <line x1="9" y1="11" x2="15" y2="11"/>
+          <line x1="9" y1="15" x2="13" y2="15"/>
+        </svg>
+        <h3>Educational Resources</h3>
+        <p>Online courses, PDF guides, and play-along tracks built around systematic frameworks for keyboard percussion, snare drum, and orchestral preparation.</p>
+        <a href="https://shop.mypercussionpath.com" class="card-link">Visit the shop &rarr;</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     SECTION 6 — SHOP CTA BAND
+══════════════════════════════════════ -->
+<section class="shop-band" aria-label="Shop call to action">
+  <span class="eyebrow">Online Resources</span>
+  <h2>Courses, Guides, and Play-Along Tracks<br>for Serious Percussionists.</h2>
+  <p>From the Unlock The Keyboard course to free PDF guides, everything in the shop is built around the same diagnostic-first framework Spencer uses in private lessons.</p>
+  <a href="https://shop.mypercussionpath.com" class="btn btn-white">Explore the Shop &rarr;</a>
+  <p class="shop-band-note">Includes: Unlock The Keyboard Course &middot; Know Where Your Mallets Are Going PDF &middot; Trust Your Roll PDF &middot; Free Guides</p>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     SECTION 7 — TESTIMONIALS
+══════════════════════════════════════ -->
+<section class="testimonials-section" id="testimonials" aria-labelledby="testimonials-heading">
+  <div class="container">
+    <div class="section-heading">
+      <h2 id="testimonials-heading">What Educators Are Saying</h2>
+    </div>
+
+    <div class="testimonials-grid" role="list">
+
+      <article class="testimonial-card" role="listitem">
+        <div class="testimonial-mark" aria-hidden="true">&ldquo;</div>
+        <blockquote class="testimonial-text">
+          Spencer Perilloux's work serves as a tremendous asset to the teaching of percussion for the modern player. Information such as sticking advice, ideas of generating the best tone for each instrument, listening examples from professional players, and gaining an overall sense of phrasing &mdash; this should be considered essential to all percussionists in the high school band program.
+        </blockquote>
+        <footer class="testimonial-author">
+          <strong>Chris Chapman</strong>
+          <span>Professor of Music, Director of Bands &mdash; Central Michigan University</span>
+        </footer>
+      </article>
+
+      <article class="testimonial-card" role="listitem">
+        <div class="testimonial-mark" aria-hidden="true">&ldquo;</div>
+        <blockquote class="testimonial-text">
+          Spencer Perilloux is a highly accomplished performer and pedagogue who has created an invaluable resource for secondary school percussionists. This comprehensive collection of guidance and the accompanying demonstration videos are not only a must-read and watch for any student auditioning for Illinois All-State, but also for any young percussionist who is looking to take the next step in advancing their technique and musicianship.
+        </blockquote>
+        <footer class="testimonial-author">
+          <strong>Jason Fettig</strong>
+          <span>Director of Bands, University of Michigan &middot; Former Director, The President's Own Marine Band</span>
+        </footer>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     SECTION 8 — CONTACT FORM
+══════════════════════════════════════ -->
+<section class="contact-section" id="contact" aria-labelledby="contact-heading">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Left: context -->
+      <div class="contact-info">
+        <span class="eyebrow">Get in Touch</span>
+        <h2 id="contact-heading">Lessons &amp; Performance Inquiries</h2>
+        <p>Whether you're a student looking for private instruction, a director with a performance inquiry, or a colleague with a question — use this form to reach out. Spencer responds to all inquiries personally.</p>
+
+        <div class="contact-details">
+          <div class="contact-row">
+            <span class="contact-row-icon" aria-hidden="true">&#9993;</span>
+            <a href="mailto:spencer.perilloux@gmail.com">spencer.perilloux@gmail.com</a>
+          </div>
+          <div class="contact-row">
+            <span class="contact-row-icon" aria-hidden="true">&#8982;</span>
+            <span>Garden City, MI (lessons via Zoom)</span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-row-icon" aria-hidden="true">&#127891;</span>
+            <span>Currently accepting new students</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div>
+        <!-- SETUP: Replace FORMSPREE_ENDPOINT with your actual Formspree form ID.
+             Create a free account at https://formspree.io, create a new form,
+             and paste the form ID (e.g., xpwzabcd) in place of FORMSPREE_ENDPOINT. -->
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/FORMSPREE_ENDPOINT"
+          method="POST"
+          novalidate
+          aria-label="Contact form"
+        >
+          <div class="form-row">
+            <div class="form-field">
+              <label for="first-name">First Name <span aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="first-name"
+                name="first_name"
+                placeholder="First name"
+                required
+                autocomplete="given-name"
+              >
+            </div>
+            <div class="form-field">
+              <label for="last-name">Last Name <span aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="last-name"
+                name="last_name"
+                placeholder="Last name"
+                required
+                autocomplete="family-name"
+              >
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="your@email.com"
+              required
+              autocomplete="email"
+            >
+          </div>
+
+          <div class="form-field">
+            <label for="inquiry-type">Inquiry Type <span aria-hidden="true">*</span></label>
+            <select id="inquiry-type" name="inquiry_type" required>
+              <option value="" disabled selected>-- Select inquiry type --</option>
+              <option value="Private Lessons">Private Lessons</option>
+              <option value="Performance / Hiring Inquiry">Performance / Hiring Inquiry</option>
+              <option value="Educational / Clinic Inquiry">Educational / Clinic Inquiry</option>
+              <option value="General Question">General Question</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message <span aria-hidden="true">*</span></label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Tell me a bit about what you're looking for..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+            Send Message
+          </button>
+
+          <div class="form-error" id="form-error" role="alert">
+            Something went wrong. Please email <a href="mailto:spencer.perilloux@gmail.com" style="color:inherit;text-decoration:underline;">spencer.perilloux@gmail.com</a> directly.
+          </div>
+        </form>
+
+        <!-- Success state (shown after form submit) -->
+        <div class="form-success" id="form-success" role="status" aria-live="polite">
+          <div class="success-icon" aria-hidden="true">&#10003;</div>
+          <strong>Message sent!</strong>
+          <p>Spencer will be in touch within 1&ndash;2 business days.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     SECTION 9 — FOOTER
+══════════════════════════════════════ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-grid">
+    <!-- Column 1: Branding -->
+    <div>
+      <p class="footer-brand-name">Spencer Perilloux</p>
+      <p class="footer-brand-sub">Percussionist &amp; Educator</p>
+      <p class="footer-tagline">Building reliable technique through diagnostic-first teaching.</p>
+    </div>
+
+    <!-- Column 2: Navigate -->
+    <nav aria-label="Footer navigation">
+      <p class="footer-col-label">Navigate</p>
+      <ul class="footer-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Teaching</a></li>
+        <li><a href="https://shop.mypercussionpath.com">Shop</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Column 3: Resources -->
+    <nav aria-label="Resources">
+      <p class="footer-col-label">Resources</p>
+      <ul class="footer-links" role="list">
+        <li><a href="https://shop.mypercussionpath.com/unlock-the-keyboard">Unlock The Keyboard Course</a></li>
+        <li><a href="https://shop.mypercussionpath.com/know-where-your-mallets-are-going">Know Where Your Mallets Are Going</a></li>
+        <li><a href="https://shop.mypercussionpath.com/trust-your-roll">Trust Your Roll PDF</a></li>
+        <li><a href="https://shop.mypercussionpath.com/free-guide">Free Guide</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="footer-bottom">
+    <span>&copy; 2026 Spencer Perilloux. All rights reserved.</span>
+    <a href="mailto:spencer.perilloux@gmail.com">spencer.perilloux@gmail.com</a>
+  </div>
+</footer>
+
+
+<!-- ══════════════════════════════════════
+     JAVASCRIPT
+══════════════════════════════════════ -->
+<script>
+  // ── Sticky nav scroll state ──
+  const nav = document.getElementById('nav');
+  const onScroll = () => {
+    nav.classList.toggle('scrolled', window.scrollY > 16);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // ── Hamburger / mobile menu ──
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    hamburger.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  // Close mobile menu when a link is clicked
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // ── Contact form ──
+  const form      = document.getElementById('contact-form');
+  const submitBtn = document.getElementById('submit-btn');
+  const formError = document.getElementById('form-error');
+  const formSuccess = document.getElementById('form-success');
+
+  function validateField(field) {
+    const valid = field.checkValidity() && field.value.trim() !== '';
+    field.classList.toggle('invalid', !valid);
+    return valid;
+  }
+
+  // Live validation on blur
+  form.querySelectorAll('input, select, textarea').forEach(field => {
+    field.addEventListener('blur', () => validateField(field));
+    field.addEventListener('input', () => {
+      if (field.classList.contains('invalid')) validateField(field);
+    });
+  });
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Client-side validation
+    const fields = Array.from(form.querySelectorAll('input[required], select[required], textarea[required]'));
+    const allValid = fields.map(validateField).every(Boolean);
+    if (!allValid) {
+      fields.find(f => f.classList.contains('invalid'))?.focus();
+      return;
+    }
+
+    // Loading state
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+    formError.style.display = 'none';
+
+    try {
+      const data = new FormData(form);
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (res.ok) {
+        form.style.display = 'none';
+        formSuccess.style.display = 'block';
+      } else {
+        throw new Error('Server error');
+      }
+    } catch {
+      formError.style.display = 'block';
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send Message';
+    }
+  });
+</script>
+
+</body>
+</html>
